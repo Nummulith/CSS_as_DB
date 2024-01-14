@@ -1,0 +1,7 @@
+body::before {
+    background-image: url("../img/excavation.png");
+    transform: scale(1.5) rotateZ(25deg);
+}
+
+header a {display: none;}
+#home {display: flex;}

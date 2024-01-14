@@ -1,0 +1,16 @@
+#era {display: flex;}
+#all {display: flex;}
+  
+.lines article{display: none;}
+
+.lines article.i000{display: flex;}
+.lines article.i001{display: flex;}
+.lines article.i002{display: flex;}
+
+.lines article.i100{display: flex;}
+.lines article.i101{display: flex;}
+.lines article.i102{display: flex;}
+
+.lines article.i200{display: flex;}
+.lines article.i201{display: flex;}
+.lines article.i202{display: flex;}

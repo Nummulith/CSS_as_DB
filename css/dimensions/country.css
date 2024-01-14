@@ -1,0 +1,11 @@
+body::before {
+    background-image: url("../../img/red-flag.png");
+}
+
+#titles article#country{
+    display: block;
+}
+
+.boxes article#germany{display: flex;}
+.boxes article#russia{display: flex;}
+.boxes article#japan{display: flex;}

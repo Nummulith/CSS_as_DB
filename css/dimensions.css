@@ -1,0 +1,12 @@
+body::before {
+    transform: scale(1.5) rotateZ(-45deg);
+}
+
+
+.boxes article{
+    display: none;
+}
+  
+#titles article{
+    display: none;
+}

@@ -1,0 +1,11 @@
+body::before {
+    background-image: url("../../img/canvas.png");
+}
+
+#titles article#media{
+    display: block;
+}
+
+.boxes article#books{display: flex;}
+.boxes article#music{display: flex;}
+.boxes article#cinema{display: flex;}

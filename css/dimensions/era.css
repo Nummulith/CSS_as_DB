@@ -1,0 +1,11 @@
+body::before {
+    background-image: url("../../img/archaeological-site.png");
+}
+
+#titles article#era{
+    display: block;
+}
+
+.boxes article#old{display: flex;}
+.boxes article#xx{display: flex;}
+.boxes article#modern{display: flex;}

@@ -1,0 +1,4 @@
+body::before {
+    background-image: url("../img/ufo.png");
+    transform: scale(1.5) rotateZ(15deg);
+}

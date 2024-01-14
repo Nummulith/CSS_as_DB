@@ -1,0 +1,16 @@
+#country {display: flex;}
+#all {display: flex;}
+  
+.lines article{display: none;}
+
+.lines article.i001{display: flex;}
+.lines article.i011{display: flex;}
+.lines article.i021{display: flex;}
+
+.lines article.i101{display: flex;}
+.lines article.i111{display: flex;}
+.lines article.i121{display: flex;}
+
+.lines article.i201{display: flex;}
+.lines article.i211{display: flex;}
+.lines article.i221{display: flex;}

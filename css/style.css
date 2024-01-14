@@ -1,0 +1,225 @@
+/* Common*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body::before {
+/*  background-image defined in css files */
+/*    transform: scale(xx) rotateZ(xx); also */
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-repeat: repeat;
+    background-size: 100px;
+    opacity: 0.03;
+}
+
+#titles img, header img, .boxes img, .lines img, .squares img{
+    height: 50px;
+    margin: 10px;
+}
+
+@font-face {
+    font-family: VT323;
+    src: url(../fonts/VT323-Regular.ttf);
+} /* Introduction of the downloaded font to css */
+
+#titles h1{
+    font-family: 'VT323', monospace;
+    font-size: 48px;
+    margin: 12px;
+    max-width: calc(100% - 150px);
+}
+
+#titles h2, .squares h2, .boxes h2 {
+    font-family: 'VT323', monospace;
+    font-size: 36px;
+    margin: 12px;
+}
+
+/* header */
+
+header{
+    text-align: right;
+    display: flex;
+    justify-content: end;
+
+    position: fixed;
+    top: 0;
+    right: 0;    
+}
+nav nav{
+    width: auto;
+}
+
+nav ul{
+    list-style-type: none; /* Getting rid of the bullet points */
+    margin: 0;
+    padding: 0;
+}
+nav p {
+    opacity: 0;
+    transition: opacity 1.0s ease;
+}
+nav a:hover{
+    visibility: visible;
+    opacity: 1;
+}    
+nav a:hover p {
+    opacity: 1;
+    box-shadow: 0 0 10px 20px white;
+    background-color: white;
+}    
+
+nav a{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    opacity: 0.3;
+    transition: opacity 1.0s ease;
+    text-decoration: none;
+}
+
+nav a#home{
+    opacity: 1;
+}
+
+nav a#bye{
+    opacity: 0.05;
+}
+
+/* titles */
+
+
+#titles div{
+    display: flex;
+}
+
+#titles p{
+    max-width: calc(100% - 55px);
+}
+
+/* squares */
+
+.squares{
+    width: 75%;
+    text-align: center;
+    margin: 0px auto;
+    display: flex;
+}
+
+.squares a{
+    text-decoration: none;
+}
+
+.squares article{
+    width: 30%;
+    background-color: rgb(245,255,245);
+    border: 1px solid black;
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+}
+
+.squares div{
+    text-align: justify;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.squares article:hover {
+    background-color: rgb(225,255,225);
+    transform: scale(1.03) rotateZ(0.6deg);
+}
+
+/* boxes */
+
+.boxes{
+    width: 75%;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.boxes a{
+    margin: 10px;
+    text-decoration: none;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+}
+
+.boxes article {
+    background-color: rgb(245,255,245);
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.boxes article:hover {
+    background-color: rgb(225,255,225);
+    transform: scale(1.03) rotateZ(0.2deg);
+    box-shadow: 1px 1px 5px gray; /* offset from left, offset from top, blur radius, color */
+}
+
+.boxes h2{
+    margin: 0px;
+}
+
+.boxes p, .boxes div{
+    margin: 0px;
+}
+
+
+
+/* lines */
+
+.lines{
+    width: 90%;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.lines article{
+    text-align: justify;
+    align-items: center;
+
+    background-color: rgb(245,255,245);
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.lines article:hover {
+    background-color: rgb(225,255,225);
+    transform: scale(1.03) rotateZ(0.2deg);
+    box-shadow: 1px 1px 5px gray; /* offset from left, offset from top, blur radius, color */
+}
+
+.lines h2{
+    margin: 10px;
+}
+
+.lines h3, .lines h4 {
+    margin: 3px;
+    text-align: center;
+}
+
+.lines div{
+    width: 20%;
+}
+
+.lines p{
+    width: 80%;
+    margin: 10px;
+}
+
+.lines a{
+    text-decoration: none;
+}

@@ -1,0 +1,16 @@
+#media {display: flex;}
+#all {display: flex;}
+
+.lines article{display: none;}
+
+.lines article.i200{display: flex;}
+.lines article.i201{display: flex;}
+.lines article.i202{display: flex;}
+
+.lines article.i210{display: flex;}
+.lines article.i211{display: flex;}
+.lines article.i212{display: flex;}
+
+.lines article.i220{display: flex;}
+.lines article.i221{display: flex;}
+.lines article.i222{display: flex;}
